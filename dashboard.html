@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard d-flex">
+        <aside class="sidebar bg-dark text-white p-3">
+            <div class="profile text-center">
+                <img src="assets/img/img1.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-3">
+                <h2>Samantha</h2>
+                <p>samantha@email.com</p>
+            </div>
+            <nav class="menu">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Dashboard</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Expenses</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Wallets</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Summary</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Accounts</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content flex-grow-1 p-3 bg-light">
+            <header class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h1 class="h3">Expenses</h1>
+                    <p class="text-muted">01 - 25 March, 2020</p>
+                </div>
+                <div>
+                    <span class="badge badge-pill badge-danger">4</span>
+                </div>
+            </header>
+            <section class="expenses">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="list-group">
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <span class="expense-icon text-success mr-3">🛒</span>
+                                    <div>
+                                        <h5 class="mb-0">Grocery</h5>
+                                        <small class="text-muted">5:12 pm - Belanja di pasar</small>
+                                    </div>
+                                </div>
+                                <span class="badge badge-danger badge-pill">-326,800</span>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <span class="expense-icon text-primary mr-3">🚍</span>
+                                    <div>
+                                        <h5 class="mb-0">Transportation</h5>
+                                        <small class="text-muted">5:12 pm - Naik bus umum</small>
+                                    </div>
+                                </div>
+                                <span class="badge badge-danger badge-pill">-15,000</span>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <span class="expense-icon text-warning mr-3">🏠</span>
+                                    <div>
+                                        <h5 class="mb-0">Housing</h5>
+                                        <small class="text-muted">5:12 pm - Bayar listrik</small>
+                                    </div>
+                                </div>
+                                <span class="badge badge-danger badge-pill">-185,750</span>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <span class="expense-icon text-danger mr-3">🍔</span>
+                                    <div>
+                                        <h5 class="mb-0">Food and Drink</h5>
+                                        <small class="text-muted">5:12 pm - Makan Steak</small>
+                                    </div>
+                                </div>
+                                <span class="badge badge-danger badge-pill">-156,000</span>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <span class="expense-icon text-purple mr-3">🎬</span>
+                                    <div>
+                                        <h5 class="mb-0">Entertainment</h5>
+                                        <small class="text-muted">5:12 pm - Nonton Bioskop</small>
+                                    </div>
+                                </div>
+                                <span class="badge badge-danger badge-pill">-35,200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Where your money go?</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Food and Drinks
+                                        <span class="badge badge-primary badge-pill">872,400</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Shopping
+                                        <span class="badge badge-primary badge-pill">1,379,200</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Housing
+                                        <span class="badge badge-primary badge-pill">928,500</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Transportation
+                                        <span class="badge badge-primary badge-pill">420,700</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Vehicle
+                                        <span class="badge badge-primary badge-pill">520,000</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-primary btn-block mt-3">View Tips</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
